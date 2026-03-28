@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Akshay Anand | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
 </head>
 <body>
     <main>
-        <aside class="sidebar " data-sidebar>
+        <aside class="sidebar" data-sidebar>
             <div class="sidebar-info">
                 <figure class="avatar-box">
-                    <img src="Avatar.png" alt="avatar" width="80">
+                    <img src="Avatar.png" alt="Akshay Anand avatar" width="80">
                 </figure>
 
                 <div class="info-content">
                     <h1 class="name" title="Akshay Anand">Akshay Anand</h1>
-                    <p class="title">Web Developer</p>
+                    <p class="title">Full-Stack Developer</p>
                 </div>
 
-                <button class="info-more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
+                <button class="info-more-btn" data-sidebar-btn type="button">
+                    <span>View Contact Details</span>
                     <ion-icon name="chevron-down"></ion-icon>
                 </button>
             </div>
@@ -37,8 +37,7 @@
 
                         <div class="contact-info">
                             <p class="contact-title">Email</p>
-
-                            <a href="nkanal38@gmail.com" class="contact-link">nkanal38.com</a>
+                            <a href="mailto:nkanal38@gmail.com" class="contact-link">nkanal38@gmail.com</a>
                         </div>
                     </li>
 
@@ -49,8 +48,7 @@
 
                         <div class="contact-info">
                             <p class="contact-title">Phone</p>
-
-                            <a href="tel:+91 7321019229" class="contact-link">+91 7321019229</a>
+                            <a href="tel:+917321019229" class="contact-link">+91 7321019229</a>
                         </div>
                     </li>
 
@@ -61,8 +59,7 @@
 
                         <div class="contact-info">
                             <p class="contact-title">Birthday</p>
-
-                            <time datetime="Feb 10, 2007">Feb 10, 2007</time>
+                            <time datetime="2007-02-10">Feb 10, 2007</time>
                         </div>
                     </li>
 
@@ -73,8 +70,7 @@
 
                         <div class="contact-info">
                             <p class="contact-title">Location</p>
-
-                            <address>Mathura,UP , India</address>
+                            <address>Mathura, UP, India</address>
                         </div>
                     </li>
                 </ul>
@@ -82,10 +78,10 @@
                 <div class="separator"></div>
 
                 <ul class="social-list">
-                    <li class="social-item"><a href="https://www.facebook.com/akshay.anand.581730/" class="social-link" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://twitter.com/hochimofrmdelhi" class="social-link" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://www.instagram.com/akshay.mehta.5817/" class="social-link" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://github.com/codedreammer" class="social-link" target="_blank"><ion-icon name="logo-GitHub"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.facebook.com/akshay.anand.581730/" class="social-link" target="_blank" rel="noreferrer"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://twitter.com/hochimofrmdelhi" class="social-link" target="_blank" rel="noreferrer"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.instagram.com/akshay.mehta.5817/" class="social-link" target="_blank" rel="noreferrer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://github.com/codedreammer" class="social-link" target="_blank" rel="noreferrer"><ion-icon name="logo-github"></ion-icon></a></li>
                 </ul>
             </div>
         </aside>
@@ -93,203 +89,209 @@
         <div class="main-content">
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link data-nav-target="about" type="button">About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link data-nav-target="resume" type="button">Experience</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link data-nav-target="portfolio" type="button">Projects</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link data-nav-target="contact" type="button">Contact</button></li>
                 </ul>
             </nav>
 
             <article class="about active" data-page="about">
                 <header>
-                    <h2 class="h2 article-title">About me</h2>
+                    <h2 class="h2 article-title">About</h2>
                 </header>
 
+                <section class="hero-panel">
+                    <p class="hero-eyebrow">Full-Stack Developer</p>
+                    <h3 class="h2 hero-title">I build practical web products with clean frontend systems and reliable backend workflows.</h3>
+                    <p class="hero-text">I work across Next.js, React, Supabase, Tailwind, HTML, CSS, JavaScript, and SQL to create responsive applications that solve real user problems.</p>
+                    <p class="hero-proof">Recent work includes GDSubway, a smart campus marketplace with authentication and order flow, and a role-based hotel booking platform backed by database-driven logic.</p>
+
+                    <div class="hero-actions">
+                        <button class="hero-btn hero-btn-primary" type="button" data-nav-target="portfolio">View Projects</button>
+                        <button class="hero-btn hero-btn-secondary" type="button" data-nav-target="contact">Get in Touch</button>
+                    </div>
+                </section>
+
                 <section class="about-text">
-                    <p>I'm Web Developer and UI/UX Designer from GLA University(MATHURA),INDIA, A first year Btech student. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
-                    <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.</p>
+                    <p>I'm a student developer focused on building full-stack web applications with clear user flows, reliable backend logic, and responsive interfaces. I usually start with the problem the product needs to solve, then shape the UI, data flow, authentication, and database structure around that workflow.</p>
+                    <p>Right now, I'm deepening my skills through projects built with Next.js, React, Supabase, Tailwind, JavaScript, and SQL. I'm especially interested in products where usability, real-world data, and system design need to work together.</p>
                 </section>
 
                 <section class="service">
-                    <h3 class="h3 service-title">What I'm doing</h3>
+                    <h3 class="h3 service-title">What I Build</h3>
 
                     <ul class="service-list">
                         <li class="service-item">
                             <div class="service-icon-box">
-                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="Full-stack applications icon" width="40">
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Web Design</h4>
-                                <p class="service-item-text">The most modern and high-quality design made at a professional level.</p>
+                                <h4 class="h4 service-item-title">Full-Stack Applications</h4>
+                                <p class="service-item-text">I build web products end to end, from interface design and component structure to authentication, data handling, and workflow logic.</p>
                             </div>
                         </li>
 
                         <li class="service-item">
                             <div class="service-icon-box">
-                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="Frontend systems icon" width="40">
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Web development</h4>
-                                <p class="service-item-text">High-quality development of sites at the professional level.</p>
+                                <h4 class="h4 service-item-title">Frontend Systems</h4>
+                                <p class="service-item-text">I create responsive interfaces with a strong focus on hierarchy, clarity, and user flows that feel deliberate instead of decorative.</p>
                             </div>
                         </li>
 
                         <li class="service-item">
                             <div class="service-icon-box">
-                                <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="icon" width="40">
+                                <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="Backend workflows icon" width="40">
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Mobile apps</h4>
-                                <p class="service-item-text">Professional development of applications for iOS and Android.</p>
+                                <h4 class="h4 service-item-title">Backend Workflows</h4>
+                                <p class="service-item-text">My projects include role-based access, authentication flows, database integration, and app logic that supports real usage scenarios.</p>
                             </div>
                         </li>
 
                         <li class="service-item">
                             <div class="service-icon-box">
-                                <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="icon" width="40">
+                                <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="Product refinement icon" width="40">
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Photography</h4>
-                                <p class="service-item-text">I make high-quality photos of any category at a professional level.</p>
+                                <h4 class="h4 service-item-title">Product Refinement</h4>
+                                <p class="service-item-text">I use each build to improve structure, content, and usability so the final product communicates value clearly to users and recruiters.</p>
                             </div>
                         </li>
                     </ul>
                 </section>
             </article>
-            
 
-            <article class="resume " data-page="resume">
+            <article class="resume" data-page="resume">
                 <header>
-                    <h2 class="h2 article-title">Resume</h2>
+                    <h2 class="h2 article-title">Experience</h2>
                 </header>
 
                 <section class="timeline">
                     <div class="title-wrapper">
                         <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-
                         <h3 class="h3">Education</h3>
                     </div>
 
                     <ol class="timeline-list">
                         <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">R.C.Academy</h4>
+                            <h4 class="h4 timeline-item-title">R.C. Academy</h4>
                             <span>2020 - 2022</span>
-                            <p class="timeline-text">From here I have completed my 10th.</p>
+                            <p class="timeline-text">Completed secondary education and built a strong academic base before moving into higher studies in science and technology.</p>
                         </li>
 
                         <li class="timeline-item">
                             <h4 class="h4 timeline-item-title">Garvi Grant Global School</h4>
                             <span>2022 - 2024</span>
-                            <p class="timeline-text">From here I have completed my High School.</p>
+                            <p class="timeline-text">Completed higher secondary education while strengthening my interest in computer science, web technology, and problem solving.</p>
                         </li>
 
                         <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">GLA University(Mathura)</h4>
+                            <h4 class="h4 timeline-item-title">GLA University, Mathura</h4>
                             <span>2024 - 2028</span>
-                            <p class="timeline-text">From here I am pursuing my Btech Degree.</p>
+                            <p class="timeline-text">Pursuing a B.Tech degree while building project-based experience in frontend and full-stack development.</p>
                         </li>
                     </ol>
                 </section>
 
                 <section class="timeline">
                     <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-
+                        <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
                         <h3 class="h3">Experience</h3>
                     </div>
 
                     <ol class="timeline-list">
                         <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Creative director</h4>
+                            <h4 class="h4 timeline-item-title">Full-Stack Development Training</h4>
                             <span>2024 - Present</span>
-                            <p class="timeline-text">I can develop and oversee creative concepts for projects and campaigns managing a team of designers, writers, and other creative professionals.</p>
+                            <p class="timeline-text">Building project-based experience with Next.js, React, Supabase, Tailwind, and SQL, with a focus on component architecture, authentication, database integration, and practical application workflows.</p>
                         </li>
 
                         <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Art director</h4>
+                            <h4 class="h4 timeline-item-title">Independent Project Development</h4>
                             <span>2024 - Present</span>
-                            <p class="timeline-text">I create and develop visual concepts that align with the project's goals and objectives, supervising the design process and managing timelines and budgets for design projects.</p>
+                            <p class="timeline-text">Designing and developing portfolio projects around real use cases, including campus ordering and hotel booking workflows. My work includes frontend implementation, backend integration, schema design, and iteration based on usability.</p>
                         </li>
 
                         <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Web designer</h4>
+                            <h4 class="h4 timeline-item-title">Portfolio and Frontend Development</h4>
                             <span>2024 - Present</span>
-                            <p class="timeline-text">I create logos, color schemes and typography for a brand's identity. Also I develop graphics for websites, social media and digital ads with applications that enhance user experience.</p>
+                            <p class="timeline-text">Maintaining and improving my personal portfolio to present projects more clearly, strengthen technical storytelling, and communicate my work in a recruiter-friendly format.</p>
                         </li>
                     </ol>
                 </section>
 
                 <section class="skill">
-                    <h3 class="h3 skills-title">My Skills</h3>
+                    <h3 class="h3 skills-title">Technical Skills</h3>
 
-                    <ul class="skills-list content-card">
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Web Design</h5>
-                                <data value="80">80%</data>
-                            </div>
+                    <div class="skills-grid">
+                        <section class="skill-group content-card">
+                            <h4 class="h4 skill-group-title">Frontend</h4>
+                            <ul class="skill-tag-list">
+                                <li class="skill-tag">Next.js</li>
+                                <li class="skill-tag">React</li>
+                                <li class="skill-tag">JavaScript</li>
+                                <li class="skill-tag">HTML5</li>
+                                <li class="skill-tag">CSS3</li>
+                                <li class="skill-tag">Tailwind CSS</li>
+                            </ul>
+                        </section>
 
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 80%;"></div>
-                            </div>
-                        </li>
+                        <section class="skill-group content-card">
+                            <h4 class="h4 skill-group-title">Backend</h4>
+                            <ul class="skill-tag-list">
+                                <li class="skill-tag">Supabase</li>
+                                <li class="skill-tag">Authentication Flows</li>
+                                <li class="skill-tag">API Integration</li>
+                                <li class="skill-tag">CRUD Workflows</li>
+                            </ul>
+                        </section>
 
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Python</h5>
-                                <data value="70">70%</data>
-                            </div>
+                        <section class="skill-group content-card">
+                            <h4 class="h4 skill-group-title">Database</h4>
+                            <ul class="skill-tag-list">
+                                <li class="skill-tag">SQL</li>
+                                <li class="skill-tag">Supabase Postgres</li>
+                                <li class="skill-tag">Relational Data Modeling</li>
+                                <li class="skill-tag">Query-Based Data Access</li>
+                            </ul>
+                        </section>
 
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 70%;"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">UI\UX</h5>
-                                <data value="90">90%</data>
-                            </div>
-
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 90%;"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Java</h5>
-                                <data value="50">50%</data>
-                            </div>
-
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 50%;"></div>
-                            </div>
-                        </li>
-                    </ul>
+                        <section class="skill-group content-card">
+                            <h4 class="h4 skill-group-title">Tools</h4>
+                            <ul class="skill-tag-list">
+                                <li class="skill-tag">Git</li>
+                                <li class="skill-tag">GitHub</li>
+                                <li class="skill-tag">VS Code</li>
+                                <li class="skill-tag">Responsive Debugging</li>
+                            </ul>
+                        </section>
+                    </div>
                 </section>
             </article>
 
-            <article class="portfolio " data-page="portfolio">
+            <article class="portfolio" data-page="portfolio">
                 <header>
-                    <h2 class="h2 article-title">Portfolio</h2>
+                    <h2 class="h2 article-title">Selected Projects</h2>
                 </header>
 
                 <section class="projects">
                     <ul class="filter-list">
-                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                        <li class="filter-item"><button data-filter-btn>Web Design</button></li>
-                        <li class="filter-item"><button data-filter-btn>Applications</button></li>
-                        <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+                        <li class="filter-item"><button class="active" data-filter-btn type="button">All</button></li>
+                        <li class="filter-item"><button data-filter-btn type="button">Full-Stack</button></li>
+                        <li class="filter-item"><button data-filter-btn type="button">Frontend</button></li>
                     </ul>
 
                     <div class="filter-select-box">
-                        <button class="filter-select " data-select>
-                            <div class="select-value" data-select-value>Select Category</div>
+                        <button class="filter-select" data-select type="button">
+                            <div class="select-value" data-select-value>Filter Projects</div>
 
                             <div class="select-icon">
                                 <ion-icon name="chevron-down"></ion-icon>
@@ -297,81 +299,214 @@
                         </button>
 
                         <ul class="select-list">
-                            <li class="select-item"><button data-select-item>All</button></li>
-                            <li class="select-item"><button data-select-item>Web Design</button></li>
-                            <li class="select-item"><button data-select-item>Applications</button></li>
-                            <li class="select-item"><button data-select-item>Web Development</button></li>
+                            <li class="select-item"><button data-select-item type="button">All</button></li>
+                            <li class="select-item"><button data-select-item type="button">Full-Stack</button></li>
+                            <li class="select-item"><button data-select-item type="button">Frontend</button></li>
                         </ul>
                     </div>
 
                     <ul class="project-list">
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://blog-card34ss.netlify.app/">
+                        <li class="project-item active" data-filter-item data-category="full-stack">
+                            <article class="project-card">
                                 <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                    <span class="project-badge">Featured Project</span>
+                                    <div class="project-carousel" data-carousel>
+                                        <img class="carousel-slide active" src="public/GD/1%20(1).png" alt="GDSubway screenshot 1" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/GD/1%20(2).png" alt="GDSubway screenshot 2" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/GD/1%20(3).png" alt="GDSubway screenshot 3" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/GD/1%20(4).png" alt="GDSubway screenshot 4" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/GD/1%20(5).png" alt="GDSubway screenshot 5" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/GD/1%20(6).png" alt="GDSubway screenshot 6" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/GD/1%20(7).png" alt="GDSubway screenshot 7" width="600" height="500" loading="lazy">
                                     </div>
 
-                                    <img src="web dev 1.png" alt="Blog-card"  width="600" height="500" loading="lazy">
+                                    <div class="carousel-dots" aria-label="GDSubway project screenshots">
+                                        <span class="carousel-dot active"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                    </div>
                                 </figure>
 
-                                <h3 class="project-title">Card</h3>
-                                <p class="project-category">Web Development</p>
-                            </a>
+                                <div class="project-copy">
+                                    <h3 class="project-title">GDSubway</h3>
+                                    <p class="project-category">Smart Campus Marketplace</p>
+
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">Problem</h4>
+                                        <p class="project-text">Students need a faster, more organized way to browse food options, place orders, and move through the ordering process without relying on scattered communication.</p>
+                                    </div>
+
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">Solution</h4>
+                                        <p class="project-text">GDSubway is a full-stack campus marketplace built to centralize discovery, authentication, and order flow in one responsive interface.</p>
+                                    </div>
+
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">My Contributions</h4>
+                                        <ul class="project-bullets">
+                                            <li>Built the application with Next.js, React, and Supabase.</li>
+                                            <li>Designed the ordering workflow from sign-in to order placement.</li>
+                                            <li>Integrated authentication for secure user access.</li>
+                                            <li>Connected frontend UI with database-backed product and order data.</li>
+                                            <li>Focused on responsive layout and clear user flow for campus users.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-meta">
+                                        <div class="project-meta-item">
+                                            <h4 class="h4 project-subtitle">Tech Stack</h4>
+                                            <p class="project-text">Next.js, React, Supabase, SQL, Tailwind CSS, JavaScript</p>
+                                        </div>
+
+                                        <div class="project-meta-item">
+                                            <h4 class="h4 project-subtitle">Outcome</h4>
+                                            <p class="project-text">Created a working full-stack product prototype that demonstrates authentication, data-driven ordering, and a structured transaction workflow for a real campus use case.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-actions">
+                                        <a class="project-link project-link-primary" href="https://gd-subway-system.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
+                                        <a class="project-link project-link-secondary" href="https://github.com/codedreammer/GD-Subway-System.git" target="_blank" rel="noreferrer">GitHub Repo</a>
+                                    </div>
+
+                                    <div class="demo-credentials">
+                                        <h4 class="h4 project-subtitle">Demo Login</h4>
+                                        <p class="project-text"><strong>Email:</strong> 2415000002@gla.ac.in</p>
+                                        <p class="project-text"><strong>Password:</strong> GLA@24</p>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://3-d.netlify.app/">
+                        <li class="project-item active" data-filter-item data-category="full-stack">
+                            <article class="project-card">
                                 <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                    <div class="project-carousel" data-carousel>
+                                        <img class="carousel-slide active" src="public/hotel/1.jpg" alt="Hotel booking platform screenshot 1" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/hotel/2.jpg" alt="Hotel booking platform screenshot 2" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/hotel/3.jpg" alt="Hotel booking platform screenshot 3" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/hotel/4.jpg" alt="Hotel booking platform screenshot 4" width="600" height="500" loading="lazy">
+                                        <img class="carousel-slide" src="public/hotel/5.jpg" alt="Hotel booking platform screenshot 5" width="600" height="500" loading="lazy">
                                     </div>
 
-                                    <img src="web sev 2.png" alt="Recipe" width="600" height="500" loading="lazy">
+                                    <div class="carousel-dots" aria-label="Hotel project screenshots">
+                                        <span class="carousel-dot active"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                    </div>
                                 </figure>
 
-                                <h3 class="project-title">Recipe</h3>
-                                <p class="project-category">Web Development</p>
-                            </a>
+                                <div class="project-copy">
+                                    <h3 class="project-title">Hotel Booking Platform</h3>
+                                    <p class="project-category">Role-Based Booking System</p>
+
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">Problem</h4>
+                                        <p class="project-text">Booking platforms need clear access control, reliable reservation handling, and data consistency across different user roles.</p>
+                                    </div>
+
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">Solution</h4>
+                                        <p class="project-text">I built a booking system with role-based access, structured reservation management, and authentication-backed workflows for a more reliable user experience.</p>
+                                    </div>
+
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">My Contributions</h4>
+                                        <ul class="project-bullets">
+                                            <li>Built the frontend and connected it with authentication and database logic.</li>
+                                            <li>Implemented role-based access patterns for different user types.</li>
+                                            <li>Structured booking data and linked reservations to user accounts.</li>
+                                            <li>Improved form handling, state flow, and UI feedback.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-meta">
+                                        <div class="project-meta-item">
+                                            <h4 class="h4 project-subtitle">Tech Stack</h4>
+                                            <p class="project-text">Next.js, React, Supabase, SQL, Tailwind CSS, JavaScript</p>
+                                        </div>
+
+                                        <div class="project-meta-item">
+                                            <h4 class="h4 project-subtitle">Outcome</h4>
+                                            <p class="project-text">Demonstrates my ability to build database-backed applications with authentication, access control, and workflow logic beyond a static interface.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-actions">
+                                        <a class="project-link project-link-primary" href="https://hotel-booking-app-five-tau.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
+                                        <a class="project-link project-link-secondary" href="https://github.com/codedreammer/hotel-booking-app.git" target="_blank" rel="noreferrer">GitHub Repo</a>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="web design">
-                            <a href="https://3-d.netlify.app/">
+                        <li class="project-item active" data-filter-item data-category="frontend">
+                            <article class="project-card">
                                 <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-
-                                    <img src="web design.png" alt="3-D" width="600" height="500" loading="lazy">
+                                    <img src="public/portfolio/image.png" alt="Personal portfolio website preview" width="600" height="500" loading="lazy">
                                 </figure>
 
-                                <h3 class="project-title">3-D</h3>
-                                <p class="project-category">Web Design</p>
-                            </a>
-                        </li>
+                                <div class="project-copy">
+                                    <h3 class="project-title">Portfolio Website</h3>
+                                    <p class="project-category">Personal Developer Portfolio</p>
 
-                        <li class="project-item active" data-filter-item data-category="applications">
-                            <a href="#">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">Problem</h4>
+                                        <p class="project-text">Many student portfolios show screenshots and skill lists, but do not explain technical depth, project context, or professional direction clearly.</p>
                                     </div>
 
-                                    <img src="web design2.png" alt="Managment System" width="600" height="500" loading="lazy">
-                                </figure>
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">Solution</h4>
+                                        <p class="project-text">This portfolio is designed to present my work with stronger structure, clearer project storytelling, and a more polished first impression for recruiters and collaborators.</p>
+                                    </div>
 
-                                <h3 class="project-title">Managment System</h3>
-                                <p class="project-category">Applications</p>
-                            </a>
+                                    <div class="project-section">
+                                        <h4 class="h4 project-subtitle">My Contributions</h4>
+                                        <ul class="project-bullets">
+                                            <li>Designed and developed the site using HTML, CSS, and JavaScript.</li>
+                                            <li>Created a responsive layout for desktop and mobile screens.</li>
+                                            <li>Improved content hierarchy and microcopy to make the site more recruiter-ready.</li>
+                                            <li>Structured project presentation to communicate both product thinking and technical work.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-meta">
+                                        <div class="project-meta-item">
+                                            <h4 class="h4 project-subtitle">Tech Stack</h4>
+                                            <p class="project-text">HTML, CSS, JavaScript</p>
+                                        </div>
+
+                                        <div class="project-meta-item">
+                                            <h4 class="h4 project-subtitle">Outcome</h4>
+                                            <p class="project-text">Acts as a central place to review my skills, project direction, and frontend execution while showing how I refine content and presentation for a professional audience.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-actions">
+                                        <a class="project-link project-link-secondary" href="https://github.com/codedreammer/Portfolio.git" target="_blank" rel="noreferrer">GitHub Repo</a>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
                     </ul>
                 </section>
             </article>
 
-            <article class="contact " data-page="contact">
+            <article class="contact" data-page="contact">
                 <header>
                     <h2 class="h2 article-title">Contact</h2>
                 </header>
+
+                <section class="contact-copy">
+                    <p>I'm open to internships, freelance work, and collaborative opportunities in frontend and full-stack development.</p>
+                    <p>If you're building a product, hiring for a developer role, or want to discuss a project, feel free to reach out. I'd be glad to share more about my work and experience.</p>
+                </section>
 
                 <section class="mapbox" data-mapbox>
                     <figure>
@@ -380,19 +515,19 @@
                 </section>
 
                 <section class="contact-form">
-                    <h3 class="h3 form-title">Contact Form</h3>
+                    <h3 class="h3 form-title">Start a Conversation</h3>
 
                     <form action="#" class="form" data-form>
                         <div class="input-wrapper">
                             <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                            <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
                         </div>
 
-                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
+                        <textarea name="message" class="form-input" placeholder="Tell me about the opportunity or project" required data-form-input></textarea>
 
                         <button class="form-btn" type="submit" disabled data-form-btn>
                             <ion-icon name="paper-plane"></ion-icon>
-                            <span>Send Message</span>
+                            <span>Start the Conversation</span>
                         </button>
                     </form>
                 </section>
@@ -401,7 +536,6 @@
     </main>
 
     <script src="main.js"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
