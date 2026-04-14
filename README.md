@@ -1,3 +1,3 @@
 # Portfolio
 Web dev
-here the link for Preview :- https://portfoliomehta.netlify.app/
+here the link for Preview :- https://portfolio-fo.netlify.app/
