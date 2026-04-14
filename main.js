@@ -162,6 +162,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2500);
     });
 
-    goToPage("about");
     applyProjectFilter("All");
+
+    const pageNames = Array.from(pages).map((page) => normalizeValue(page.dataset.page || ""));
+    const hashPage = normalizeValue(window.location.hash.replace("#", "") || "about");
+    goToPage(pageNames.includes(hashPage) ? hashPage : "about");
 });
